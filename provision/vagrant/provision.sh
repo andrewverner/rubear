@@ -34,3 +34,5 @@ sudo cp /provision/nginx/rubear.conf /etc/nginx/sites-enabled/rubear.conf
 sudo service nginx restart
 
 mysql -uroot -ppassword latex_rubear < /app/latex_rubear.sql
+touch /app/www/log/access.log
+touch /app/www/log/error.log
